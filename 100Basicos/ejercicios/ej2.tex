@@ -1,0 +1,44 @@
+\subsection{Ejercicio 2}
+\def\parte{enunciados}
+\ifx\capitulo\parte
+La siguiente matriz muestra la distancia entre diversas ciudades:
+
+\begin{center}
+  \begin{tabular}[h]{cccccc}
+    &A&B&C&D&E \\
+    A&0&10&20&30&40 \\
+    B&15&0&20&50&60 \\
+    C&20&30&0&80&10 \\
+    D&50&40&20&0&10 \\
+    E&20&20&54&21&0
+  \end{tabular}
+\end{center}
+
+Observa que la matriz no es simétrica, la ruta de A a B puede ser más larga o más corta que la ruta de B a A. Dada esta matriz:
+\begin{itemize}
+\item Comprueba que la distancia de cada ciudad a sí misma. Es decir, ¿es la traza de la matriz igual a cero?
+\item Calcula la distancia máxima entre dos ciudades.
+\item Calcula la media de la distancia de las rutas que parten de la ciudad A.
+\item Calcula la media de la distancia de las rutas que llegan a la ciudad C.
+\end{itemize}
+\fi
+
+\def\parte{recetas}
+\ifx\capitulo\parte
+\begin{enumerate}
+\item Definimos la matriz.
+\item Mostramos por pantalla la traza de la matriz.
+\item Mostramos el máximo de la matriz. Para ello tendremos que calcular el máximo dos veces, ya que la primera nos da el máximo de cada columna, puesto que calcula el máximo \textbf{a lo largo de} la primera dimensión.
+\item Mostramos el máximo de la primera fila.
+\item Mostramos el máximo de la tercera columna.
+\end{enumerate}
+\fi
+
+\def\parte{soluciones}
+\ifx\capitulo\parte
+\lstinputlisting[style=matlab-style]{snippets/ej2.m}
+\fi
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: "../100Basicos"
+%%% End:

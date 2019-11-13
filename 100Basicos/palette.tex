@@ -1,0 +1,14 @@
+\COPY{150}{\H} \COPY{1}{\s} \COPY{0.5}{\b}
+
+\foreach \i in {0,...,359}{
+  \ADD{\H}{\i}{\hue}
+  \MODULO{\hue}{360}{\normhue}
+  \xglobal\definecolor{c\i}{Hsb}{\normhue,\s,\b}
+  \xglobal\definecolor{p\i}{Hsb}{\normhue,0.43,0.7}
+  \xglobal\definecolor{d\i}{Hsb}{\normhue,1,0.2}
+}
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: "P2"
+%%% End:

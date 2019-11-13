@@ -1,24 +1,73 @@
-\documentclass[]{book}
+\documentclass[]{article}
 
+\usepackage{hyperref}
+\usepackage{tikz}
+\usepackage{calculator}
 \usepackage{listings}
+\usepackage{textcomp}
 
-\title{100 Ejercicios para el Manejo Básico de Matlab/Octave}
+\input{palette}
+\input{lstConfig}
+
+\def\numberline#1{}
+
+\hypersetup{
+  colorlinks = true,
+  allcolors = c0
+}
+
+\newcommand{\mt}{Matlab\textbackslash Octave }
+
+\title{Ejercicios para el Manejo Básico de Matlab/Octave}
 \author{Gustavo Rivas Gervilla}
 
 \begin{document}
 \maketitle
 
-\chapter{Enunciados} \def\capitulo{enunciados}
+\newpage
+\section*{¿Cómo usar este archivo?}
 
-\input{ejercicios/ej1.tex}
+En este archivo puedes encontrar varios ejercicios de programación con \mt. Este archivo es \textbf{un complemento} para el estudio de la asignatura Fundamentos de Informática del Grado en Ingeniería Química de la Universidad de Granada.
 
-\chapter{Recetas} \def\capitulo{recetas}
+En cualquier caso no es una guía de estudio, o una muestra de todo aquello que el estudiante ha de poner en práctica en los exámenes de la asignatura. Es sólo un material adicional con el que poner en práctica distintos conceptos de la asignatura.
 
-\input{ejercicios/ej1.tex}
+El archivo está dividido en 3 partes:
+\begin{enumerate}
+\item \textbf{Enunciados:} Aquí se encontraran los distintos ejercicios prácticos que el estudiante puede realizar para aumentar su destreza con la programación en \mt.
+\item \textbf{Recetas:} Para cada uno de los ejercicios se facilita un desglose del problema que plantea el ejercicio, para orientar al estudiante en escritura del código que resuelve el problema planteado.
+\item \textbf{Soluciones:} Para cada ejercicio se proporciona un posible código para solucionar el problema.
+\end{enumerate}
 
-\chapter{Soluciones} \def\capitulo{soluciones}
+El estudiante abordará cada uno de los ejercicios. En caso de no saber cómo abordar el ejercicio o no estar seguro de qué se pide en el enunciado puede consultar la \textit{receta} facilitada para ese ejercicio. Finalmente, el estudiante puede consultar la solución propuesta para el ejercicio si quiere compararla con la suya, o ver en qué se está pudiendo equivocar.
 
-\input{ejercicios/ej1.tex}
+Además:
+
+\begin{itemize}
+\item Este archivo ha sido creado empleando \LaTeX.
+\item Los trozos de código que aparecen en el mismo han sido insertados y formateados empleando el paquete listings, con lo que el código se puede copiar directamente del PDF y pegarlo en un editor de código.
+\end{itemize}
+
+\tableofcontents
+
+\section{Enunciados} \def\capitulo{enunciados}
+\renewcommand\thesubsection{Enunciado}
+
+\foreach \i in {1,...,30}{
+  \input{ejercicios/ej\i}
+}
+
+\section{Recetas} \def\capitulo{recetas}
+\renewcommand\thesubsection{Receta}
+
+\foreach \i in {1,...,30}{
+  \input{ejercicios/ej\i}
+}
+\section{Soluciones} \def\capitulo{soluciones}
+\renewcommand\thesubsection{Solución}
+
+\foreach \i in {1,...,30}{
+  \input{ejercicios/ej\i}
+}
 
 \end{document}
 

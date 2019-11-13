@@ -1,22 +1,35 @@
-\section{Ejercicio 1}
+\subsection{Ejercicio 1}
 \def\parte{enunciados}
 \ifx\capitulo\parte
-Pedir al usuario su edad y su peso. Imprimirlos por pantalla, empleando dos decimales de precisión para el peso del usuario.
+Dado el siguiente vector con los radios de los círculos se pide:
+\begin{itemize}
+\item Mostrar el número de círculos que hay.
+\item Obtener un vector con el área de cada círculo. Recordemos que la fórmula es $\pi r^2$, donde $r$ es el radio.
+\item Obtener un vector con la longitud de la circunferencia de cada círculo. La fórmula para este cálculo es $2\pi r$.
+\end{itemize}
+
+El vector con los radios de ejemplo es el siguiente. Aunque se puede probar con otros vectores de distintas longitud o valores:
+
+\begin{lstlisting}[style = matlab-style, numbers = none]
+  v = [10 5 8 6 20 50];
+\end{lstlisting}
 \fi
 
 \def\parte{recetas}
 \ifx\capitulo\parte
 \begin{enumerate}
-\item Le pedimos al usuario los dos datos que necesitamos con la función \lstinline|input|.
-\item Imprimir los datos.
+\item Declaramos el vector con los radios.
+\item Mostramos el número de círculos por pantalla, empleando la función que nos da el número de elementos en un vector.
+\item Usamos la fórmula para calcular el área con el vector de radios, aprovechando cómo funcionan las operaciones con vectores en Matlab.
+\item Hacemos lo propio para calcular la longitud de la circunferencia de cada círculo.
 \end{enumerate}
 \fi
 
 \def\parte{soluciones}
 \ifx\capitulo\parte
-\lstinputlisting{snippets/ej1.m}
+\lstinputlisting[style=matlab-style]{snippets/ej1.m}
 \fi
 %%% Local Variables:
 %%% mode: latex
-%%% TeX-master: t
+%%% TeX-master: "../100Basicos"
 %%% End:
