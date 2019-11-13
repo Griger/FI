@@ -1,19 +1,40 @@
 \subsection{Ejercicio 3}
 \def\parte{enunciados}
 \ifx\capitulo\parte
+La siguiente tabla muestra la nota de algunos estudiantes en diversas asignaturas sí:
 
+\begin{center}
+  \begin{tabular}[h]{cccc}
+    &Matemáticas&Lengua&Filosofía \\
+    Estudiante1&5&7&10 \\
+    Estudiante2&6&4&3 \\
+    Estudiante3&8&5&8 \\
+    Estudiante4&9&8&9 
+  \end{tabular}
+\end{center}
+
+\begin{itemize}
+\item Calcula la desviación típica en la nota para cada una de las asignaturas.
+\item Muestra la nota del Estudiante2 en Lengua.
+\item Calcula la media de cada estudiante redondeándola al alza.
+\item Muestra las notas de cada estudiante en un gráfico de barras.
+\end{itemize}
 \fi
 
 \def\parte{recetas}
 \ifx\capitulo\parte
 \begin{enumerate}
-\item
+\item Definimos la matriz.
+\item Mostramos la nota del Estudiante2.
+\item Calculamos la desviación típica en cada columna, es decir, a lo largo de la primera dimensión (a lo largo de las filas). Y mostramos el vector resultante.
+\item Calculamos la media en cada fila, es decir, a lo largo de la segunda dimensión (se deja fija la fila y se mueve la columna). Y mostramos el vector resultante.
+\item Mostramos la matriz empleando un gráfico de barras y añadimos título, etiquetas y leyenda para hacerlo más legible.
 \end{enumerate}
 \fi
 
 \def\parte{soluciones}
 \ifx\capitulo\parte
-%\lstinputlisting[style=matlab-style]{snippets/ej.m}
+\lstinputlisting[style=matlab-style]{snippets/ej3.m}
 \fi
 %%% Local Variables:
 %%% mode: latex

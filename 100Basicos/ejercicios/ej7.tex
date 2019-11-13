@@ -1,19 +1,30 @@
 \subsection{Ejercicio 7}
 \def\parte{enunciados}
 \ifx\capitulo\parte
+El número $\pi$ se puede aproximar empleando el conocido \href{https://en.wikipedia.org/wiki/Wallis_product}{Producto de Wallis} el cuál nos dice que:
+\[\frac{\pi}{2} = \prod_{n = 1}^{\infty} \frac{4n^2}{4n^2 + 1}\]
 
+Para comporobar que efectivamente sucesión converge a $\pi$:
+\begin{itemize}
+\item Calcula para cada natural $m$ desde 1 hasta 1000, el valor del productorio $2\prod_{n = 1}^{m} \frac{4n^2}{4n^2 + 1}$. Y observa cómo los valores se aproximan a $\pi$. Es importante que no metas el 2 dentro del productorio, es decir, primero se calcula el productorio y luego se multiplica por dos su valor. A diferencia de lo que ocurre con una sumatoria donde sí se podría meter dentro de la sumatoria algo que va multiplicándola.
+\item Muestra una gráfica donde se muestren esos valores calculados y observa como los valores convergen a $\pi$.
+\end{itemize}
 \fi
 
 \def\parte{recetas}
 \ifx\capitulo\parte
 \begin{enumerate}
-\item
+\item Definimos un vector con los números del 1 al 1000.
+\item Para cada valor $n$ en dicho vector calculamos el correspondiente término del productorio.
+\item Ahora sobre ese nuevo vector con los términos calculamos otro vector con el producto acumulado. Así cada término se corresponderá con un productorio desde 1 hasta un cierto $n$.
+\item Y multiplicamos ese vector por dos. Veremos cómo cada término se acerca más a $\pi$, es decir, cuántos más términos multiplicamos más nos acercamos a $\pi$.
+\item Dibujamos los valores de este último vector en una gráfica.
 \end{enumerate}
 \fi
 
 \def\parte{soluciones}
 \ifx\capitulo\parte
-%\lstinputlisting[style=matlab-style]{snippets/ej.m}
+\lstinputlisting[style=matlab-style]{snippets/ej7.m}
 \fi
 %%% Local Variables:
 %%% mode: latex

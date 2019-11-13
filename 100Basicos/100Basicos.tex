@@ -1,5 +1,8 @@
-\documentclass[]{article}
+\documentclass[spanish]{article}
 
+\usepackage[spanish]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
 \usepackage{hyperref}
 \usepackage{tikz}
 \usepackage{calculator}
@@ -17,8 +20,9 @@
 }
 
 \newcommand{\mt}{Matlab\textbackslash Octave }
+\newcommand{\code}[1]{\lstinline[style=matlab-style]{#1}}
 
-\title{Ejercicios para el Manejo Básico de Matlab/Octave}
+\title{Ejercicios para el Manejo Básico de Matlab/Octave sí}
 \author{Gustavo Rivas Gervilla}
 
 \begin{document}
@@ -46,14 +50,16 @@ Además:
 \item Este archivo ha sido creado empleando \LaTeX.
 \item Los trozos de código que aparecen en el mismo han sido insertados y formateados empleando el paquete listings, con lo que el código se puede copiar directamente del PDF y pegarlo en un editor de código.
 \end{itemize}
+\newpage
 
 \tableofcontents
+\newpage
 
 \section{Enunciados} \def\capitulo{enunciados}
 \renewcommand\thesubsection{Enunciado}
 
 \foreach \i in {1,...,30}{
-  \input{ejercicios/ej\i}
+  {\input{ejercicios/ej\i}}
 }
 
 \section{Recetas} \def\capitulo{recetas}

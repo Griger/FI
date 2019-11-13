@@ -1,19 +1,30 @@
 \subsection{Ejercicio 6}
 \def\parte{enunciados}
 \ifx\capitulo\parte
+Un estudiante ha obtenido las siguientes calificaciones en sus últimos exámenes: 5,6,8,4,3,8,7. Solicita al estudiante su nombre y muestra por pantalla:
 
+\begin{enumerate}
+\item La medida de sus notas.
+\item Su mejor y peor nota.
+\item Una gráfica mostrando la evolución de sus notas.
+\end{enumerate}
+
+Estos resultados se mostrarán siempre haciendo mención expresa al nombre del usuario. Por ejemplo, ``Fulanito, la media de tus notas es...''.
 \fi
 
 \def\parte{recetas}
 \ifx\capitulo\parte
 \begin{enumerate}
-\item
+\item Definimos un vector que contenga las notas del estudiante. 
+\item Le pedimos al usuario su nombre. Teniendo en cuenta que la información introducida por el usuario ha de tratarse de forma literal y no evaluarse (recuerda la opción de \code{input} que nos permite esto).
+\item Mostramos por pantalla la media, el mínimo y el máximo de ese vector.
+\item Dibujamos una gráfica con el valor de sus notas.
 \end{enumerate}
 \fi
 
 \def\parte{soluciones}
 \ifx\capitulo\parte
-%\lstinputlisting[style=matlab-style]{snippets/ej.m}
+\lstinputlisting[style=matlab-style]{snippets/ej6.m}
 \fi
 %%% Local Variables:
 %%% mode: latex

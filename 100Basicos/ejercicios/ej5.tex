@@ -1,19 +1,31 @@
 \subsection{Ejercicio 5}
 \def\parte{enunciados}
 \ifx\capitulo\parte
-
+Dadas dos matrices 5x12 con elementos aleatorios en el intervalo [0,1000]. Calcular, suponiendo que la primera matriz representa los gastos de 5 personas en cada uno de los meses del año, y la segunda representa sus ingresos:
+\begin{enumerate}
+\item Para cada persona y cada mes la cantidad (negativa o positiva) neta que ha entrado en su cuenta en ese mes ($ingresos - gastos$).
+\item El balance anual para cada persona (la suma de los ingresos en cada mes para cada persona).
+\item El neto máximo mensual de cada persona. Y el neto mínimo.
+\item La media de gastos anual entre todas las personas.
+\item El ratio ingresos/gastos mensual de cada persona.
+\end{enumerate}
 \fi
 
 \def\parte{recetas}
 \ifx\capitulo\parte
 \begin{enumerate}
-\item
+\item Generar las matrices aleatorias, que tendrán valores en el rango $[0,1]$. Ahora para tener valores en el rango $[0,1000]$, no tenemos más que multiplicar esos elementos por $1000$.
+\item Calcular la diferencia de las dos matrices para obtener una matriz con el neto de cada mes para cada persona.
+\item Hacer la suma por filas de la matriz anterior para obtener el neto anual, es decir, a lo largo de la segunda dimensión.
+\item Sobre la matriz del segundo punto obtener el máximo y el mínimo de la fila, es decir, a lo largo de la segunda dimensión.
+\item Obtener el gasto anual de cada persona y hacer la media de los valores obtenidos.
+\item Hacer la división de la matriz de ingresos por la matriz de gastos, elemento a elemento.
 \end{enumerate}
 \fi
 
 \def\parte{soluciones}
 \ifx\capitulo\parte
-%\lstinputlisting[style=matlab-style]{snippets/ej.m}
+\lstinputlisting[style=matlab-style]{snippets/ej5.m}
 \fi
 %%% Local Variables:
 %%% mode: latex

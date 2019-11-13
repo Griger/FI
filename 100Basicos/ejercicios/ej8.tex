@@ -1,19 +1,30 @@
 \subsection{Ejercicio 8}
 \def\parte{enunciados}
 \ifx\capitulo\parte
-
+Dado el siguiente vector
+\begin{lstlisting}[style=matlab-style]
+  v = [-1 5 6 8 9 10 20 -5 6 8];
+\end{lstlisting}
+Realiza las siguientes operaciones sobre este vector:
+\begin{enumerate}
+\item Muestra el vector en orden inverso.
+\item Muestra el vector ordenado de menor a mayor.
+\item Poner en valor absoluto los elementos en las posiciones impares.
+\item Duplicar los elementos en las posiciones múltiplo de 3.
+\item Obtener la suma de los 5 primeros elementos.
+\item Obtener el producto de los elementos en posiciones pares.
+\item Restar 1 a los 5 últimos elementos del vector.
+\end{enumerate}
 \fi
 
 \def\parte{recetas}
 \ifx\capitulo\parte
-\begin{enumerate}
-\item
-\end{enumerate}
+Para este ejercicio sólo conviene apuntar el modo más adecuado de obtener los $m$ últimos elementos de un vector (siempre que el vector tenga al menos $m$ elementos). Como sabemos \code{end} nos devuelve la última posición del vector, es decir, si un vector tiene 10 elementos, 10 posiciones, \code{end} valdrá 10. Por otro lado si el vector tiene 15 elementos \code{end} vale 15. Entonces la posición \code{end - h} sería la posición \texttt{h} posiciones antes que la última posición. Por tanto los últimos 5 elementos del vector se accederían con \code{v(end-4:end)}.
 \fi
 
 \def\parte{soluciones}
 \ifx\capitulo\parte
-%\lstinputlisting[style=matlab-style]{snippets/ej.m}
+\lstinputlisting[style=matlab-style]{snippets/ej8.m}
 \fi
 %%% Local Variables:
 %%% mode: latex

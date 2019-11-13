@@ -1,19 +1,19 @@
 \subsection{Ejercicio 10}
 \def\parte{enunciados}
 \ifx\capitulo\parte
-
+Dada una matriz (cualquiera, la puedes definir como quieras) obten la matriz resultante de multiplicar los elementos de cada fila de la matriz original por el primer elemento de esa fila.
 \fi
 
 \def\parte{recetas}
 \ifx\capitulo\parte
-\begin{enumerate}
-\item
-\end{enumerate}
+Para resolver este ejercicio tenemos que pensar en cómo funciona el producto de matrices. Si pensamos en multiplicar una matriz diagonal por una matriz cualquiera, es fácil ver que el resultado es que nosotros esperamos en el ejercicio. Es decir, en la primera fila de la matriz resultante los valores serán los valores de la primera fila de la segunda matriz en el producto, multiplicados por el primer elemento de la diagonal en la matriz diagonal, en la segunda fila pasará lo mismo pero con la segunda fila de la segunda matriz en el producto y el segundo elemento en la diagonal de la matriz diagonal, y así sucesivamente.
+
+Por lo tanto para obtener el resultado deseado no tenemos más que construir una matriz diagonal con los elementos de la primera columna de la matriz original (que son los primeros elementos de cada fila), y multiplicar dicha matriz diagonal por la matriz original.
 \fi
 
 \def\parte{soluciones}
 \ifx\capitulo\parte
-%\lstinputlisting[style=matlab-style]{snippets/ej.m}
+\lstinputlisting[style=matlab-style]{snippets/ej10.m}
 \fi
 %%% Local Variables:
 %%% mode: latex

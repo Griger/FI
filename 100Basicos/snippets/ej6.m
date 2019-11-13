@@ -1,0 +1,1 @@
+nombre = input('Dime tu nombre: ', 's');notas = [5 6 8 4 3 8 7];fprintf('%s, la media de tus calificaciones es de %f.\n', nombre, mean(notas))fprintf('%s, tu mejor nota es %f.\n', nombre, max(notas))fprintf('%s, tu peor nota es de %f.\n', nombre, min(notas))fprintf('%s, aqui puedes ver un grafico con la evolucion de tus notas.\n', nombre)plot(notas)

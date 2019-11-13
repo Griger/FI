@@ -1,19 +1,26 @@
 \subsection{Ejercicio 9}
 \def\parte{enunciados}
 \ifx\capitulo\parte
+Un cuadrado mágico es una matriz cuadrada de un tamaño determinado, en la que aparecen todos los números de 1 hasta $n^2$ sin repetir, siendo $n$ el tamaño de la matriz. Además esta matriz cumple que la suma de los elementos en cada fila, la suma de los elementos de cada columna y la suma de los elementos de las dos diagonales principales de la matriz es la misma.
 
+La función \code{magic} en Matlab nos genera un cuadrado mágico con el tamaño que nosotros le pasemos como argumento.
+
+Genera una cuadrado mágico con dicha función y comprueba que sus filas, columnas y diagonales suman todas lo mismo.
 \fi
 
 \def\parte{recetas}
 \ifx\capitulo\parte
 \begin{enumerate}
-\item
+\item Generamos la matriz con la función \code{magic}.
+\item Calculamos la suma de cada una de sus filas.
+\item Calculamos la suma de cada una de sus columnas.
+\item Calculamos la suma de los elementos de sus diagonales principales: una será la traza de la matriz, y la otra la traza de la matriz resultante de voltear la matriz de izquierda a derecha.
 \end{enumerate}
 \fi
 
 \def\parte{soluciones}
 \ifx\capitulo\parte
-%\lstinputlisting[style=matlab-style]{snippets/ej.m}
+\lstinputlisting[style=matlab-style]{snippets/ej9.m}
 \fi
 %%% Local Variables:
 %%% mode: latex

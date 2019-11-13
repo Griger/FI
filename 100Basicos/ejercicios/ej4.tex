@@ -1,19 +1,25 @@
 \subsection{Ejercicio 4}
 \def\parte{enunciados}
 \ifx\capitulo\parte
-
+La altura de una pelota de goma que se deja caer al suelo desde una cierta altura viene dada por la siguiente función, donde $t$ es el tiempo en segundos:
+\[\mid sin(t^t) / 2^{(t^t - \frac{\pi}{2})/\pi} \mid\]
+Pide al usuario un instante de tiempo entre el 1 y 3, y calcula la altura de la pelota en ese instante. A continuación visualiza gráficamente cómo evoluciona la altura de la pelota en ese rango de tiempo, y testea  mirando la gráfica si el valor obtenido se corresponde con la realidad.
 \fi
 
 \def\parte{recetas}
 \ifx\capitulo\parte
 \begin{enumerate}
-\item
+\item Pedir al usuario el instante de tiempo $t$ en el que calcular la altura, y hacer los cálculos necesarios para obtener la altura de la pelota en dicho instante.
+\item Mostrar el resultado por pantalla.
+\item Construir un vector que contenga el rango de valores donde se va a evaluar la función para dibujarla (los valores del eje x). Emplear saltos suficientemente pequeños en dicho rango para que la función se dibujo con la suficiente ``resolución''.
+\item Obtener el vector de valores $y$ a partir del vector anterior.
+\item Dibujar la gráfica usando ambos vectores.
 \end{enumerate}
 \fi
 
 \def\parte{soluciones}
 \ifx\capitulo\parte
-%\lstinputlisting[style=matlab-style]{snippets/ej.m}
+\lstinputlisting[style=matlab-style]{snippets/ej4.m}
 \fi
 %%% Local Variables:
 %%% mode: latex
