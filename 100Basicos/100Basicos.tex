@@ -8,6 +8,10 @@
 \usepackage{calculator}
 \usepackage{listings}
 \usepackage{textcomp}
+\usepackage{marvosym}
+\usepackage{multicol}
+\usepackage{amsmath}
+\setlength{\columnsep}{1cm}
 
 \input{palette}
 \input{lstConfig}
@@ -21,15 +25,16 @@
 
 \newcommand{\mt}{Matlab\textbackslash Octave }
 \newcommand{\code}[1]{\lstinline[style=matlab-style]{#1}}
+\renewcommand{\texteuro}{\EURtm}
 
-\title{Ejercicios para el Manejo Básico de Matlab/Octave sí}
+\title{Ejercicios para el Manejo Básico de Matlab/Octave}
 \author{Gustavo Rivas Gervilla}
 
 \begin{document}
 \maketitle
 
 \newpage
-\section*{¿Cómo usar este archivo?}
+\section*{¿Cómo usar este archivo?\footnote{Para cualquier duda sobre los ejercicios de este guion enviar un correo a \href{mailto:griger@decsai.ugr.es}{griger@decsai.ugr.es}}}
 
 En este archivo puedes encontrar varios ejercicios de programación con \mt. Este archivo es \textbf{un complemento} para el estudio de la asignatura Fundamentos de Informática del Grado en Ingeniería Química de la Universidad de Granada.
 
@@ -58,20 +63,20 @@ Además:
 \section{Enunciados} \def\capitulo{enunciados}
 \renewcommand\thesubsection{Enunciado}
 
-\foreach \i in {1,...,30}{
+\foreach \i in {1,...,40}{
   {\input{ejercicios/ej\i}}
 }
 
 \section{Recetas} \def\capitulo{recetas}
 \renewcommand\thesubsection{Receta}
 
-\foreach \i in {1,...,30}{
+\foreach \i in {1,...,40}{
   \input{ejercicios/ej\i}
 }
 \section{Soluciones} \def\capitulo{soluciones}
 \renewcommand\thesubsection{Solución}
 
-\foreach \i in {1,...,30}{
+\foreach \i in {1,...,40}{
   \input{ejercicios/ej\i}
 }
 

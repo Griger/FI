@@ -1,19 +1,34 @@
 \subsection{Ejercicio 20}
 \def\parte{enunciados}
 \ifx\capitulo\parte
+Una empresa cuenta con varios empleados con los siguientes salarios:
+\begin{center}
+  \begin{tabular}[h]{cccccc}
+    1100&2500&1350&2000&2000&1800
+  \end{tabular}
+\end{center}
 
+Baraja los empleados aleatoriamente y:
+\begin{itemize}
+\item Aplica un aumento de un 10\% a los empleados que hayan quedado en posiciones pares.
+\item Aumenta 100€ a los empleados en las 3 primeras posiciones.
+\item Duplica el salario al empleado en la última posición.
+\end{itemize}
 \fi
 
 \def\parte{recetas}
 \ifx\capitulo\parte
 \begin{enumerate}
-\item
+\item Definir un vector con los salarios.
+\item Obtener una permutación aleatoria de los números del 1 al 6.
+\item Barajar el vector, usando la permutación anterior para acceder a los elementos del vector por ese orden.
+\item Aplicar los cambios en el vector de salario una vez barajado.
 \end{enumerate}
 \fi
 
 \def\parte{soluciones}
 \ifx\capitulo\parte
-%\lstinputlisting[style=matlab-style]{snippets/ej.m}
+\lstinputlisting[style=matlab-style]{snippets/ej20.m}
 \fi
 %%% Local Variables:
 %%% mode: latex

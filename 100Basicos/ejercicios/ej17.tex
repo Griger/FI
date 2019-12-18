@@ -1,19 +1,20 @@
 \subsection{Ejercicio 17}
 \def\parte{enunciados}
 \ifx\capitulo\parte
-
+Como sabemos, existen algunas matrices que no tienen una matriz inversa, es decir, una matriz que al multiplicarla por ella dé la identidad. Para ver esto define una matriz cuadrada de un tamaño cualquiera con todos sus elementos nulos, y otra con todos sus elementos uno. Y comprueba el resultado que \mt devuelve al intentar calcular su matriz inversa.
 \fi
 
 \def\parte{recetas}
 \ifx\capitulo\parte
 \begin{enumerate}
-\item
+\item Definir las dos matrices con las funciones \code{zeros} y \code{ones}.
+\item Calcular su matriz inversa con la función \code{inv}.
 \end{enumerate}
 \fi
 
 \def\parte{soluciones}
 \ifx\capitulo\parte
-%\lstinputlisting[style=matlab-style]{snippets/ej.m}
+\lstinputlisting[style=matlab-style]{snippets/ej17.m}
 \fi
 %%% Local Variables:
 %%% mode: latex

@@ -1,0 +1,43 @@
+\subsection{Ejercicio 37}
+\def\parte{enunciados}
+\ifx\capitulo\parte
+Implementa un script en el que se le pida al usuario su nombre, su edad, y su peso. Entonces:
+
+\begin{itemize}
+\item A los menores de edad se les solicitará su altura en metros, y se mostrará su IMC ($peso / altura^2$).
+\item A los usuarios de entre 30 y 50 años se les solicitará su sueldo.
+\item A aquellos que tienen menos de 18 años se les preguntará si desean estudiar un idioma o no. Deberán responder ``N'' o ``S'', y en base a esta respuesta se les sugerirá que estudien sueco o que elijan música como actividad extraescolar.
+\item Dependiendo del sueldo del usuario, se les recomendará alquilar un piso, comprar un piso o comprar una casa:
+  \begin{itemize}
+  \item Menos de 700€: alquilar piso.
+  \item Entre 700€ y 1500€: comprar piso.
+  \item Más de 1500€: comprar casa.
+  \end{itemize}
+\item Para aquellas personas mayores de 50 años se les sugerirá un plan de pensiones. Además si su peso excede los 100kg, entonces se les recomendará hacer deporte.
+\end{itemize} 
+La información que se muestra por pantalla irá acompañada por el nombre del usuario.
+\fi
+
+\def\parte{recetas}
+\ifx\capitulo\parte
+En este ejercicio no tenemos más que seguir las indicaciones que se dan en el enunciado. Teniendo en cuenta:
+
+\begin{itemize}
+\item Que algunos puntos se pueden agrupar bajo la misma condición, y no hay que hacer dos bloques condicionales distintos.
+\item Que queremos que la entrada del usuario a la pregunta de si quiere o no estudiar un idioma sea una cadena que puede ser solamente ``S'' o ``N'', con lo que habrá que forzar la entrada con un \code{while}.
+\end{itemize}
+\fi
+
+\def\parte{soluciones}
+\ifx\capitulo\parte
+\lstinputlisting[style=matlab-style]{snippets/ej37.m}
+\fi
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: "../100Basicos"
+%%% End:
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: "../100Basicos"
+%%% End:

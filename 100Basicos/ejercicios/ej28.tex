@@ -1,19 +1,33 @@
 \subsection{Ejercicio 28}
 \def\parte{enunciados}
 \ifx\capitulo\parte
+Dado un vector de enteros aleatorios en el intervalo [-100,100]:
 
+\begin{itemize}
+\item Se imprime si el número de elementos positivos es mayor que el de negativos, igual o menor. Entiendo por elementos positivos aquellos que son mayor o igual que cero.
+\item Si el número de positivos es mayor que el de negativos: se imprime si en el vector hay más valores pares que impares, o no.
+\item Si el número de positivos es menor que el de negativos: se imprime el número de múltiplos de 3, y además se indica el caso en el que la suma de elementos múltiplos de 5 en valor absoluto, es mayor que la suma de elementos positivos.
+\item En caso de empate, los números negativos pasan a ser cero. Y los positivos no nulos se cambian de signo.
+\item En cualquier caso se imprime el número de valores nulos del vector.
+\end{itemize}
 \fi
 
 \def\parte{recetas}
 \ifx\capitulo\parte
 \begin{enumerate}
-\item
+\item Calculamos el número de valores positivos y negativos en el vector, que lo abremos definido gracias a la función \code{rand} y a la fórmula del cambio de escala. Para pasar de un valor $x$ en el rango $[a,b]$ a otro en el rango $[c,d]$ empleamos \href{https://math.stackexchange.com/a/159271}{la fórmula}:
+  \[\frac{(d-c)(x-a)}{b-a} + c \]
+  Además, rendodeamos lo elementos del vector al entero más cercano, para así tener un vector de enteros y no de decimales.
+\item Mostramos el número de valores nulos en el vector: esto es algo que hacemos en cualquier caso con lo que va fuera de cualquier estructura condicional.
+\item A continuación, siguiendo el enunciado comprobamos qué acciones realizamos según qué caso, y las ponemos en un if else. Tendremos una estructura \code{if-elseif-else}, como estructura condicional principal para distinguir los 3 casos que pueden darse según el número de elementos positivos y negativos.
+\item Dentro de cada caso hacemos lo que se pide, empleando otra estructura condicional cuando sea necesario.
+\item Para comprobar el correcto funcionamiento de nuestro código, o del que se da como ejemplo, se pueden definir vectores a manos con unos pocos valores, intentando ver si según el vector que definamos se ejecuta lo que el programa a de ejecutar.
 \end{enumerate}
 \fi
 
 \def\parte{soluciones}
 \ifx\capitulo\parte
-%\lstinputlisting[style=matlab-style]{snippets/ej.m}
+\lstinputlisting[style=matlab-style]{snippets/ej28.m}
 \fi
 %%% Local Variables:
 %%% mode: latex

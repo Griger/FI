@@ -1,0 +1,35 @@
+\subsection{Ejercicio 38}
+\def\parte{enunciados}
+\ifx\capitulo\parte
+Escribe un script en el que dada una matriz, se cuente cuántos elementos son múltiplo de 2, o bien son múltiplos de 3 o de 5, pero no de ambos.
+
+A continuación, empleando estructuras repetitivas, modifique la matriz de modo que los elementos de cada fila queden multiplicados por el primer elemento de esa fila.
+
+Por último selecciona los elementos de la matriz múltiplos de 4.
+\fi
+
+\def\parte{recetas}
+\ifx\capitulo\parte
+\begin{enumerate}
+\item Creamos la matriz como queramos. Por ejemplo enteros aleatorios en el [0,10].
+\item Contamos cuántos elementos cumplen la condición usando \code{sum} dos veces para sumar los 1 del vector de la matriz de booleanos que obtendremos.
+\item Obtenemos el número de filas y de columnas de la matriz.
+\item Hacemos un \code{for} doble para recorrer la matriz, el primer bucle recorrerá las filas y el segundo las columnas. Para cada fila almacenamos el valor del primer elemento de esa fila, que será el valor por el que queremos multiplicar todos los elementos de esa fila (si no, multiplicaríamos ese elemento por si mismo en el segundo bucle, y multiplicaríamos el resto de los elementos de la fila por su cuadrado, y no por el primer elemento original).
+\item En el segundo bucle recorremos las columnas de cada fila, y multiplicamos sus elementos por el valor almacenado en la otra variable.
+\item Para seleccionar los elementos de la matriz que son múltiplos de 4 simplemente usamos el acceso por condiciones que hemos visto en el tema de estructuras condicionales.
+\end{enumerate}
+\fi
+
+\def\parte{soluciones}
+\ifx\capitulo\parte
+\lstinputlisting[style=matlab-style]{snippets/ej38.m}
+\fi
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: "../100Basicos"
+%%% End:
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: "../100Basicos"
+%%% End:

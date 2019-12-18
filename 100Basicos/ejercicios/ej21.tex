@@ -1,19 +1,29 @@
 \subsection{Ejercicio 21}
 \def\parte{enunciados}
 \ifx\capitulo\parte
+Obten una matriz en la que:
+\begin{itemize}
+\item La primera fila contenga valores de 1 a 10 con saltos de 0.2.
+\item La segunda contenga el valores de la función $\sqrt{x}$ sobre los valores de la primera fila.
+\item La tercera contenga los valores de la función $sin(x)*cos(x)$ sobre los valores de la primera fila.
+\item La cuarta fila contenga los valores de la función $log(x)$ sobre los valores de la primera fila.
+\end{itemize}
 
+Dibuja la gráfica de las 3 funciones empleando los datos contenidos en la matriz.
 \fi
 
 \def\parte{recetas}
 \ifx\capitulo\parte
 \begin{enumerate}
-\item
+\item Definimos un vector con los valores de la primera fila.
+\item Definimos la matriz haciendo uso de las operaciones vectoriales.
+\item Dibujamos las gráficas dándole distintos colores a cada una, accediendo para ello a las filas correspondientes de la matriz.
 \end{enumerate}
 \fi
 
 \def\parte{soluciones}
 \ifx\capitulo\parte
-%\lstinputlisting[style=matlab-style]{snippets/ej.m}
+\lstinputlisting[style=matlab-style]{snippets/ej21.m}
 \fi
 %%% Local Variables:
 %%% mode: latex

@@ -1,0 +1,29 @@
+\subsection{Ejercicio 32}
+\def\parte{enunciados}
+\ifx\capitulo\parte
+Implementa una función que dada un vector de números enteros positivos, dibuje un gráfico de barras usando asteriscos para dibujarlo, donde cada barra tiene la altura, es decir, tantos asteriscos, como indique el número en la posición del vector correspondiente.
+\fi
+
+\def\parte{recetas}
+\ifx\capitulo\parte
+\begin{enumerate}
+\item Nuestra función recibirá como parámetro el vector a dibujar. Y en este caso será una función que no devolverá nada, ya que lo único que queremos que haga es dibujar el gráfico de barras correspondiente.
+\item En la función lo primero que hacemos es calcular la altura máxima del gráfico que se corresponderá con el valor máximo del vector que pasamos como argumento.
+\item Ahora iremos dibujando el gráfico de arriba a abajo, es decir de la fila más alta, correspondiente a la altura máxima del gráfico, a la fila uno.
+\item Para cada una de las filas del gráfico, recorremos el vector. Si en una posición tenemos que la altura de esa barra es mayor o igual que la fila actual, entonces dibujamos un *, y si no dibujamos un espacio en blanco.
+\end{enumerate}
+\fi
+
+\def\parte{soluciones}
+\ifx\capitulo\parte
+\lstinputlisting[style=matlab-style]{snippets/ej32.m}
+\fi
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: "../100Basicos"
+%%% End:
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: "../100Basicos"
+%%% End:

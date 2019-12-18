@@ -1,0 +1,35 @@
+\subsection{Ejercicio 33}
+\def\parte{enunciados}
+\ifx\capitulo\parte
+Escribe un script en el cual se pida el número de jugadores. Entonces se generará una cantidad máxima aleatoria en el intervalo [0,1000]. Para cada jugador se le indicará su cantidad actual, que empezará siendo cero, y le preguntará si deseada seguir obteniendo números o no. A lo que responderá ``S'' o ``N''. Cada vez que el usuario diga que ``S'' se le generará otro número aleatorio en el intervalo [0, cantidadMaxima / 10], que se sumará a su cantidad total.
+
+Cuando el jugador diga ``N'' se plantará y pasará al siguiente, mostrando la cantidad total obtenida por este jugador. Se puede usar este script como un juego en el que ganará quien más se aproxime a la cantidad máxima sin pasarse.
+\fi
+
+\def\parte{recetas}
+\ifx\capitulo\parte
+\begin{enumerate}
+\item Se pide el número de jugadores y se genera una cantidadMaxima aleatoria en el [0,1000].
+\item Ahora para cada jugador:
+  \begin{enumerate}
+  \item Se le indica su cantidad actual. Y se le pregunta si quiere continuar.
+  \item Se le seguirá preguntando si quiere continuar mientras que no introduzca una respuesta válida que es ``S'' o ``N''.
+  \item Si responde ``S'' se aumentará su cantidad actual un número aleatorio en el intervalo [0, cantidadMaxima / 10], y se vuelve al inicio de este bucle.
+  \item Si responde ``N'' se muestra la cantidad total acumulada por el jugador, y se pasa al siguiente jugador.
+  \end{enumerate}
+\end{enumerate}
+\fi
+
+\def\parte{soluciones}
+\ifx\capitulo\parte
+\lstinputlisting[style=matlab-style]{snippets/ej33.m}
+\fi
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: "../100Basicos"
+%%% End:
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: "../100Basicos"
+%%% End:

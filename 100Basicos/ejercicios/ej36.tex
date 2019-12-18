@@ -1,0 +1,36 @@
+\subsection{Ejercicio 36}
+\def\parte{enunciados}
+\ifx\capitulo\parte
+Implementa una función que devuelva el máximo de un vector, junto con la posición del vector en la que se encuentra. Emplea para ello estructuras repetitivas.
+A continuación emplea esta función en un script para mostrar el máximo de un vector, y además cambiar todas las posiciones del vector, excepto la perteneciente al máximo, por cero.
+\fi
+
+\def\parte{recetas}
+\ifx\capitulo\parte
+Tenemos una función que recibe un solo parámetro, que es el vector al que le vamos a buscar el máximo, y que devuelve dos valores: el máximo del vector y su posición.
+
+Lo que haremos en la función será recorrer los elementos del vector, e ir almacenando el máximo valor encontrado hasta el momento en la variable que devolverá el máximo, y también se devolverá la posición en la está ese elemento en la variable que devolverá la posición.
+
+En el script que usa esta función simplemente:
+
+\begin{enumerate}
+\item Obtenemos el máximo y la posición del vector.
+\item Mostramos el máximo.
+\item Recorremos las posiciones del vector, y para aquellas que no sean la posición del máximo cambiamos el valor por cero. 
+\end{enumerate}
+\fi
+
+\def\parte{soluciones}
+\ifx\capitulo\parte
+\lstinputlisting[style=matlab-style, caption={El archivo maxPos.m}]{snippets/maxPos.m}
+\lstinputlisting[style=matlab-style, caption={El script que usa esta función.}]{snippets/ej36.m}
+\fi
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: "../100Basicos"
+%%% End:
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: "../100Basicos"
+%%% End:

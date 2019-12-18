@@ -1,19 +1,25 @@
 \subsection{Ejercicio 11}
 \def\parte{enunciados}
 \ifx\capitulo\parte
-
+Solicitar al usuario su nombre y su saldo actual. Supuesto que un lápiz cuesta 1.5€ y una goma de borrar cuesta 2€. Calcula:
+\begin{itemize}
+\item Cuál es el número máximo de lápices que puede comprar, y cuántas gomas puede comprar con el dinero sobrante.
+\item Y viceversa: cuál es el número máximo de gomas que puede comprar, y cuántos lápices puede comprar con el dinero sobrante.
+\end{itemize}
+Dirígete al usuario empleando su nombre.
 \fi
 
 \def\parte{recetas}
 \ifx\capitulo\parte
 \begin{enumerate}
-\item
+\item Obtener el resto y el cociente de la división entera de dividir el saldo por el precio de un lápiz: el cociente será el número máximo de lápices y el resto el dinero sobrante. Con este dinero sobrante se calculan cuántas gomas se pueden comprar, nuevamente calculando el cociente de la división entera.
+\item El segundo apartado se hace de forma análoga.
 \end{enumerate}
 \fi
 
 \def\parte{soluciones}
 \ifx\capitulo\parte
-%\lstinputlisting[style=matlab-style]{snippets/ej.m}
+\lstinputlisting[style=matlab-style]{snippets/ej11.m}
 \fi
 %%% Local Variables:
 %%% mode: latex

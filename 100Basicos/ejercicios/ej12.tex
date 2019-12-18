@@ -1,19 +1,26 @@
 \subsection{Ejercicio 12}
 \def\parte{enunciados}
 \ifx\capitulo\parte
-
+La siguiente igualdad es una generalización de la identidad de Euler, donde $n$ es un número natural mayor que 1, e $i$ es la unidad imaginaria:
+\[\sum_{k = 0}^{n-1}e^{2\pi i \frac{k}{n}} = 0\]
+Comprueba que esta identidad se da para $n = 100, 1000$ y $10000$.
 \fi
 
 \def\parte{recetas}
 \ifx\capitulo\parte
 \begin{enumerate}
-\item
+\item Definir un vector con los números de 0 a 9999, que son los que vamos a necesitar en las sumatorias que vamos a calcular.
+\item Calcular 3 vectores con los términos de cada una de las sumatorias. \textit{Observa que no se puede calcular un vector único de términos y luego sumar los 100 primeros o los 1000 primeros, puesto que para cada $n$ los términos de la sumatoria cambian ligeramente, ya que en el exponente tenemos $n$ dividiendo}.
+  \begin{itemize}
+  \item Tener en cuenta que la función \code{exp} aplicada sobre un vector actúa elemento a elemento, devolviendo un vector en el que cada elemento es el resultado de $e^x$ donde $x$ es cada uno de los elementos del vector.
+  \end{itemize}
+\item Mostrar para cada $n$ la suma de los términos que hemos calculado.
 \end{enumerate}
 \fi
 
 \def\parte{soluciones}
 \ifx\capitulo\parte
-%\lstinputlisting[style=matlab-style]{snippets/ej.m}
+\lstinputlisting[style=matlab-style]{snippets/ej12.m}
 \fi
 %%% Local Variables:
 %%% mode: latex

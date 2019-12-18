@@ -1,19 +1,24 @@
 \subsection{Ejercicio 24}
 \def\parte{enunciados}
 \ifx\capitulo\parte
+En \mt existen dos funciones que nos generan números aleatorios en el intervalo $[0,1]$. \code{rand} genera valores en el este intervalo siguiendo una distribución uniforme, es decir, todos los valores tienen la misma probabilidad de salir. Por otro lado \code{randn} genera valores siguiendo una distribución normal de media 0 y varianza 1, donde los valores más probables son aquellos más cercanos a la media, más cercanos a cero (puesto que esta distribución tiene la forma de lo que se conoce como una campana de Gauss centrada en el cero):
 
+\begin{itemize}
+\item Obten un vector de 1000 números aleatorios con cada una de estas funciones.
+\item Calcula la media de cada uno de los vectores.
+\end{itemize}
+
+Verás como la media del vector generado con \code{rand} está cercana a $0.5$; se obtienen valores distribuidos uniformemente a lo largo de todo el intervalo $[0,1]$, cuyo punto medio es el $0.5$. Por otro lado la media del vector obtenido con \code{randn} estará cercana a $0$, que como hemos dicho anteriormente es la media que tiene la distrubución que siguen los valores generados con esta función. Puedes repetir el experimento tantas veces como desees.
 \fi
 
 \def\parte{recetas}
 \ifx\capitulo\parte
-\begin{enumerate}
-\item
-\end{enumerate}
+Este ejercicio no precisa receta.
 \fi
 
 \def\parte{soluciones}
 \ifx\capitulo\parte
-%\lstinputlisting[style=matlab-style]{snippets/ej.m}
+\lstinputlisting[style=matlab-style]{snippets/ej24.m}
 \fi
 %%% Local Variables:
 %%% mode: latex

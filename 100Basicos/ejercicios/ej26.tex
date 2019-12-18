@@ -1,19 +1,27 @@
 \subsection{Ejercicio 26}
 \def\parte{enunciados}
 \ifx\capitulo\parte
+Dado un vector con los valores del 1 al 100, escribe un script en el que:
 
+\begin{itemize}
+\item Con estructuras repetitivas cambiar el signo de los múltiplos de 5.
+\item Sin emplear estructuras repetitivas, empleando operadores relacionales, multiplicar por 2 los múltiplos de 3.
+\end{itemize}
 \fi
 
 \def\parte{recetas}
 \ifx\capitulo\parte
 \begin{enumerate}
-\item
+\item Definimos el vector.
+\item Para la primera parte con un bucle \code{for} vamos recorriendo los elementos del vector, teniendo en cuenta que \textbf{necesitamos modificarlos}.
+\item Para cada elemento del vector, si es múltiplo de 5, lo cambiamos de signo.
+\item Para la segunda parte, accedemos a las posiciones donde hay valores múltiplos de 3, y le asignamos el resultado de multiplicar las mismas posiciones por 2.
 \end{enumerate}
 \fi
 
 \def\parte{soluciones}
 \ifx\capitulo\parte
-%\lstinputlisting[style=matlab-style]{snippets/ej.m}
+\lstinputlisting[style=matlab-style]{snippets/ej26.m}
 \fi
 %%% Local Variables:
 %%% mode: latex

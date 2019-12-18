@@ -1,19 +1,54 @@
 \subsection{Ejercicio 16}
 \def\parte{enunciados}
 \ifx\capitulo\parte
+La siguiente matriz refleja el número de unidades que distintos clientes han comprado de un determinado producto:\\
+\vspace{1em}
 
+\begin{center}
+\begin{tabular}[h]{ccccc}
+  &Producto A&Producto B&Producto C&Producto D \\
+  Cliente 1&100&200&50&40 \\
+  Cliente 2&50&80&10&5 \\
+  Cliente 3&50&50&60&210
+\end{tabular}  
+\end{center}
+
+
+
+Por otro lado el siguiente vector nos da el precio de cada producto:\\
+\vspace{1em}
+
+\begin{center}
+\begin{tabular}[h]{cccc}
+  Producto A&Producto B&Producto C&Producto D \\
+  50&20&10&30
+\end{tabular}
+  
+\end{center}
+
+\vspace{1em}
+Calcula:
+
+\begin{enumerate}
+\item Qué ha gastado cada cliente en total.
+\item Qué han gastado los clientes en media en el Producto B.
+\item El total gastado por todos los clientes en la tienda.
+\end{enumerate}
 \fi
 
 \def\parte{recetas}
 \ifx\capitulo\parte
 \begin{enumerate}
-\item
+\item Definimos la matriz y el vector con la información del enunciado.
+\item Multiplicamos la matriz por el vector de precios traspuesto. Esto, por como funciona el producto de matrices nos dará un vector columna con lo gastado por cada cliente en total.
+\item Calcular la media del producto de la columna de gastos referente al Producto B por el precio del producto B.
+\item Suma el vector obtenido en el primer apartado.
 \end{enumerate}
 \fi
 
 \def\parte{soluciones}
 \ifx\capitulo\parte
-%\lstinputlisting[style=matlab-style]{snippets/ej.m}
+\lstinputlisting[style=matlab-style]{snippets/ej16.m}
 \fi
 %%% Local Variables:
 %%% mode: latex

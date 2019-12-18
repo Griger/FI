@@ -1,0 +1,34 @@
+\subsection{Ejercicio 40}
+\def\parte{enunciados}
+\ifx\capitulo\parte
+Implemente una función que dados dos enteros positivos, devuelva el cociente y el resto de la división entera del primero por el segundo. Para ello se empleará el algoritmo de la división, que se describe como sigue:
+\begin{enumerate}
+\item El cociente comienza siendo 0, y el resto comienza siendo el dividendo de la división a realizar.
+\item Mientras que el resto sea mayor o igual que el divisor.
+  \begin{enumerate}
+  \item El cociente aumenta en uno.
+  \item Al resto se le resta el divisor.
+  \end{enumerate}
+\end{enumerate}
+\fi
+
+\def\parte{recetas}
+\ifx\capitulo\parte
+La función recibirá dos valores, el dividendo y el divisor. Y devolverá también dos valores, el cociente y el resto de la división entera. Para calcular ese cociente y el resto no tenemos más que implementar dentro de la función el algoritmo que se describe en el enunciado.
+
+Recordemos que para recoger los valores de una función que devuelve varios valores entonces tenemos que hacer algo como \code{[Q,R] = ej40(10,5)}.
+\fi
+
+\def\parte{soluciones}
+\ifx\capitulo\parte
+\lstinputlisting[style=matlab-style]{snippets/ej40.m}
+\fi
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: "../100Basicos"
+%%% End:
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: "../100Basicos"
+%%% End:

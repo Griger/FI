@@ -1,19 +1,40 @@
 \subsection{Ejercicio 23}
 \def\parte{enunciados}
 \ifx\capitulo\parte
+Dadas las dos matrices siguientes:
+\[
+  A = \begin{pmatrix}
+    2&3&-5\\
+    10&1&0\\
+    5&5&6
+  \end{pmatrix}
+  B = \begin{pmatrix}
+    4&0&1\\
+    -9&-2&5\\
+    0&1&7
+  \end{pmatrix}
+\]
 
+Calcula:
+\begin{itemize}
+\item El producto de $A$ por $B$, y de $B$ por $A$.
+\item La matriz resultante de multiplicar las matrices elemento a elemento.
+\item $A*A*B$, o lo que es lo mismo $A^2B$
+\item El producto de $A$ por su matriz inversa.
+\item La suma de las dos matrices.
+\item La matriz resultante de multiplicar los elementos de $B$ por el determinante de $A$.
+\item La matriz resultante de dividir los elementos de $A$ por la traza de $B$.
+\end{itemize}
 \fi
 
 \def\parte{recetas}
 \ifx\capitulo\parte
-\begin{enumerate}
-\item
-\end{enumerate}
+Este ejercicio no precisa receta, salvo destacar la diferencia entre las instrucciones \code{A.^2} y \code{A^2}, donde la primera nos da el la matriz resultante de elevar cada elemento de \code{A} al cuadrado, y la segunda el resultado de multiplicar \code{A} por ella misma. Siendo la última la que hemos de emplear en este ejercicio.
 \fi
 
 \def\parte{soluciones}
 \ifx\capitulo\parte
-%\lstinputlisting[style=matlab-style]{snippets/ej.m}
+\lstinputlisting[style=matlab-style]{snippets/ej23.m}
 \fi
 %%% Local Variables:
 %%% mode: latex

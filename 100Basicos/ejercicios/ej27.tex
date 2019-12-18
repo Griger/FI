@@ -1,19 +1,27 @@
 \subsection{Ejercicio 27}
 \def\parte{enunciados}
 \ifx\capitulo\parte
+Escribe una función que, dada una matriz devuelva:
 
+\begin{itemize}
+\item El número de elementos que son múltiplos de 2 o múltiplos de 3 (pero no de ambos), sin emplear estructuras repetitivas, es decir, empleando operadores relacionales.
+\item El número de elementos que son múltiplos de 5 y de 4, empleando estructuras repetitivas.
+\end{itemize}
 \fi
 
 \def\parte{recetas}
 \ifx\capitulo\parte
 \begin{enumerate}
-\item
+\item La función a diseñar recibe como parámetro la matriz que vamos a analizar. Y en este caso es una función que devuelve \textbf{dos valores}.
+\item Obtengo una matriz de booleanos donde se indique qué elementos de la matriz son múltiplos de 2 o de 3, pero no de ambos. Y uso esos booleanos (que son ceros y unos) para obtener el número total de elementos que cumplen esa condición, sumando los booleanos (esta suma será la que devuelva como uno de los dos valores devueltos por la función).
+\item Para el segundo paso obtengo el número de filas y de columnas de la matriz en dos variables.
+\item Con un bucle \code{for} doble recorro la matriz: el primer bucle recorrerá las filas, y el bucle interior las columnas. Para cada elemento de la matriz (\code{M(i,j)}), si cumple que es múltiplo de 5 y de 4, aumento en 1 una variable (que es la que devuelvo como segundo valor) que lleva la cuenta de los elementos de la matriz que cumplen esto.
 \end{enumerate}
 \fi
 
 \def\parte{soluciones}
 \ifx\capitulo\parte
-%\lstinputlisting[style=matlab-style]{snippets/ej.m}
+\lstinputlisting[style=matlab-style]{snippets/ej27.m}
 \fi
 %%% Local Variables:
 %%% mode: latex

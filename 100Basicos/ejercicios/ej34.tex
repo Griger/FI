@@ -1,0 +1,30 @@
+\subsection{Ejercicio 34}
+\def\parte{enunciados}
+\ifx\capitulo\parte
+Implementa una función que empleando estructuras repetitivas calcule la traza de una matriz no necesariamente cuadrada.
+\fi
+
+\def\parte{recetas}
+\ifx\capitulo\parte
+La función recibirá una matriz como argumento, y devolverá la traza de dicha matriz.
+
+La traza de una matriz se puede ver como la suma de aquellos elementos cuya posición tiene la fila y columna igual. Entonces:
+\begin{enumerate}
+\item Calculamos el mínimo entre el número de filas y el de columnas de la matriz, así nos aseguraremos de no tener un fallo en las dimensiones ya que si por ejemplo tenemos una matriz con 2 filas y 3 columnas, el elemento M(3,3) no existe, y tendríamos un fallo en las dimensiones.
+\item Teniendo en cuenta ese mínimo hacemos un bucle para sumar los elementos \code{M(i,i)} de la matriz.
+\end{enumerate}
+\fi
+
+\def\parte{soluciones}
+\ifx\capitulo\parte
+\lstinputlisting[style=matlab-style]{snippets/ej34.m}
+\fi
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: "../100Basicos"
+%%% End:
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: "../100Basicos"
+%%% End:

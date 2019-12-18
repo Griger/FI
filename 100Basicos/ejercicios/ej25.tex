@@ -1,19 +1,49 @@
 \subsection{Ejercicio 25}
 \def\parte{enunciados}
 \ifx\capitulo\parte
+La siguiente matriz muestra el precio base de distintos productos en distintos países:
+\begin{center}
+  \begin{tabular}[h]{cccc}
+    &Producto A&Producto B&Producto C \\
+    País 1&100&200&300 \\
+    País 2&400&300&200 \\
+    País 3&500&400&100
+  \end{tabular}
+\end{center}
 
+Y la siguiente matriz recoge el factor a aplicar a cada uno de esos productos en cada país debido a distintas políticas internacionales:
+
+\begin{center}
+  \begin{tabular}[h]{cccc}
+    &Producto A&Producto B&Producto C \\
+    País 1&1.1&0.5&0.3 \\
+    País 2&0.5&2&1.2 \\
+    País 3&1&1&1.5
+  \end{tabular}
+\end{center}
+
+Calcula:
+
+\begin{itemize}
+\item El precio medio del Producto A en los distintos países después de aplicar los factores.
+\item La diferencia media absoluta en el precio del Producto B antes y después de aplicar los factores
+\item El precio medio de los productos en el País 2 después de aplicar los factores.
+\item La diferencia media absoluta de precios entre los países 1 y 3 después de aplicar los factores.
+\end{itemize}
 \fi
 
 \def\parte{recetas}
 \ifx\capitulo\parte
 \begin{enumerate}
-\item
+\item Definimos las matrices.
+\item Calculamos el precio de cada producto en cada país después de aplicar los factores, calculando el producto elemento a elemento de ambas matrices.
+\item Calculamos los 4 puntos que se piden en el ejercicio.
 \end{enumerate}
 \fi
 
 \def\parte{soluciones}
 \ifx\capitulo\parte
-%\lstinputlisting[style=matlab-style]{snippets/ej.m}
+\lstinputlisting[style=matlab-style]{snippets/ej25.m}
 \fi
 %%% Local Variables:
 %%% mode: latex

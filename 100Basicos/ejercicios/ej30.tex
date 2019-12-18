@@ -1,19 +1,26 @@
 \subsection{Ejercicio 30}
 \def\parte{enunciados}
 \ifx\capitulo\parte
-
+Implementa una función que calcule empleando estructuras repetitivas la media de los elementos de la triangular superior de una matriz cuadrada.
 \fi
 
 \def\parte{recetas}
 \ifx\capitulo\parte
 \begin{enumerate}
-\item
+\item La función recibe como argumento la matriz a la que le vamos a calcular la media de su triangular superior. Al igual que en Matlab la función \code{mean} recibe por ejemplo el vector al que le vamos a calcular su media.
+\item La función devolverá un valor; la media de la triangular superior de la matriz. Al igual que  la función \code{mean} devuelve la media del vector que le pasemos.
+\item Para calcular la media recorremos los elementos de la triangular superior:
+  \begin{itemize}
+  \item En la fila i estos elementos serán los que van de la columna i hasta el final.
+  \item Por tanto el primer bucle recorrerá las filas y el segundo, dentro del primero, recorrerá las columnas que vayan desde la columna i (si estamos en la fila i), hasta el final.
+  \end{itemize}
+\item Vamos acumulando la suma de estos elementos en una variable, y también llevamos la cuenta de cuántos elementos hemos sumado en otra variable. Con estos dos datos finalmente calculamos la media, que será el valor que devolveremos.
 \end{enumerate}
 \fi
 
 \def\parte{soluciones}
 \ifx\capitulo\parte
-%\lstinputlisting[style=matlab-style]{snippets/ej.m}
+\lstinputlisting[style=matlab-style]{snippets/ej30.m}
 \fi
 %%% Local Variables:
 %%% mode: latex

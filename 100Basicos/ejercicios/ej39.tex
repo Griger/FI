@@ -1,0 +1,32 @@
+\subsection{Ejercicio 39}
+\def\parte{enunciados}
+\ifx\capitulo\parte
+Escriba un script en el que empleando estructuras repetitivas se trasponga una matriz cuadrada. Para ello tenga en cuenta que sólo se tendrán que recorrer los elementos de la diagonal superior o inferior de la matriz, sin incluir la diagonal que, como sabemos, al transponer una matriz queda como estaba.
+\fi
+
+\def\parte{recetas}
+\ifx\capitulo\parte
+Tenemos que tener en cuenta que dada una matriz $M$ su matriz traspuesta $M'$ cumple que $M(i,j) = M'(j,i)$, es decir, se intercambian filas por columnas. Dicho esto, suponiendo que vamos a recorrer los elementos de la triangular superior de la matriz, sin incluir la diagonal:
+
+\begin{enumerate}
+\item Obtenemos el número de filas y columnas de la matriz.
+\item Hacemos un bucle \code{for} doble que recorrerá la matriz.
+\item El primer bucle recorrerá las filas.
+\item El segundo recorrerá las columnas correspondientes a los elementos de la triangular superior de la matriz sin incluir la diagonal principal. Es decir esas columnas después de la columna perteneciente a la diagonal principal.
+\item Ahora intercambiaremos el valor $M(i,j)$ de la matriz con el valor $M(j,i)$ de la matriz.
+\end{enumerate}
+\fi
+
+\def\parte{soluciones}
+\ifx\capitulo\parte
+\lstinputlisting[style=matlab-style]{snippets/ej39.m}
+\fi
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: "../100Basicos"
+%%% End:
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: "../100Basicos"
+%%% End:

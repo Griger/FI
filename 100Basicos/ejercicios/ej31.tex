@@ -1,0 +1,39 @@
+\subsection{Ejercicio 31}
+\def\parte{enunciados}
+\ifx\capitulo\parte
+Implementa una función \code{esPrimo} que, empleando estructuras repetitivas, devuelva un booleano indicando si un número es primo o no.
+
+A continuación, implementa un script en el que, dado un número introducido por el usuario indique:
+\begin{itemize}
+\item Si es un número par y mayor que 10, o no.
+\item En caso de serlo, se muestra si es un múltiplo de 5 o no.
+\item Si no lo es, se imprime si es un número primo o no, empleando la función anteriormente implementada.
+\end{itemize}
+\fi
+
+\def\parte{recetas}
+\ifx\capitulo\parte
+Para la función que comprueba si un número es primo. Esta función recibirá un número, y devolverá un booleano indicando si el número es primo o no. Entonces:
+
+\begin{enumerate}
+\item El booleano empezará siendo \code{true}.
+\item Para cada entero mayor que 1 y menor que el número introducido, comprobamos si ese entero divide al número introducido, en cuyo caso el número tendría un divisor distinto del 1 y de él mismo, con lo que el booleano que indica si el número es primo o no pasaría a ser \code{false}.
+\end{enumerate}
+
+El script que se pide no es más que una estructura condicional anidada donde seguiremos las indicaciones que se dan en el enunciado para ver cómo anidamos las estructuras condicionales.
+\fi
+
+\def\parte{soluciones}
+\ifx\capitulo\parte
+\lstinputlisting[style=matlab-style, title=La función \texttt{esPrimo} que ha de guardarse en un archivo \texttt{esPrimo.m}.]{snippets/esPrimo.m}
+\lstinputlisting[style=matlab-style, title=El script donde se usa la función \texttt{esPrimo}.]{snippets/ej31.m}
+\fi
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: "../100Basicos"
+%%% End:
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: "../100Basicos"
+%%% End:

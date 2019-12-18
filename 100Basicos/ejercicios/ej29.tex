@@ -1,19 +1,37 @@
 \subsection{Ejercicio 29}
 \def\parte{enunciados}
 \ifx\capitulo\parte
+Define dos funciones \code{maximum} y \code{minimum} que calculen, empleando estructuras repetitivas el máximo y el mínimo de un vector.
 
+Emplea estas dos funciones en un script en el que se defina un vector a mano de números positivos. Luego se pedirá al usuario números mientras inserte números mayores o iguales que cero. Cuando el usuario deje de introducir números se mostrará la suma de aquellos números introducidos por el usuario que estan en el intervalo [mínimo, máximo]. Donde mínimo y máximo son el mínimo y el máximo del vector previamente definido.
 \fi
 
 \def\parte{recetas}
 \ifx\capitulo\parte
+Para definir una función que calcule con estructuras repetitivas el máximo de un vector:
 \begin{enumerate}
-\item
+\item La función recibe el vector como parámetro. Y devuelve un solo valor, que será el máximo del vector.
+\item Entonces inicialmente el máximo será el primer elemento del vector.
+\item Luego iremos recorriendo el vector. En este caso podemos recorrer directamente los valores sin hacer \code{v(i)} ya que sólo no nos interesan los valores del vector, y no vamos a modificar el vector en sí.
+\item Para cada valor del vector, si es mayor que el máximo actual que hemos encontrado, entonces el máximo pasará a ser ese valor.
+\end{enumerate}
+La función para calcular el mínimo se definiría de forma análoga. Ahora para el script donde se usan las funciones:
+\begin{enumerate}
+\item Definimos un vector de números positivos, como queramos.
+\item Le pedimos al usuario un primer valor.
+\item Y mientras que el usuario introduzca valores mayor o iguales que cero:
+  \begin{enumerate}
+  \item Si el valor introducido está en el rango [minimo, maximo], lo sumamos a la suma actual de los valores en el rango.
+  \end{enumerate}
+\item Finalmente mostramos la suma calculada cuando el usuario haya introducido un valor negativo, parando así el bucle en el que se le van pidiendo valores.
 \end{enumerate}
 \fi
 
 \def\parte{soluciones}
 \ifx\capitulo\parte
-%\lstinputlisting[style=matlab-style]{snippets/ej.m}
+\lstinputlisting[style=matlab-style, title=Archivo \texttt{maximum.m}]{snippets/maximum.m}
+\lstinputlisting[style=matlab-style, title=Archivo \texttt{minimum.m}]{snippets/minimum.m}
+\lstinputlisting[style=matlab-style, title=El script donde se usan ambas funciones.]{snippets/ej29.m}
 \fi
 %%% Local Variables:
 %%% mode: latex

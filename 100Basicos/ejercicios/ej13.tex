@@ -1,19 +1,21 @@
 \subsection{Ejercicio 13}
 \def\parte{enunciados}
 \ifx\capitulo\parte
-
+Para ciertos ángulos el seno y el coseno coinciden. Esto se produce cuando el seno y el coseno valen $\pm \frac{\sqrt{2}}{2}$. Para comprobarlo dibuja las funciones seno y coseno en el intervalo $[0, 10\pi]$, y añade también dos líneas horizontales a las alturas $\frac{\sqrt{2}}{2}$ y $-\frac{\sqrt{2}}{2}$, dándole distinto color y estilo de línea a cada una. Además, añade una leyenda que permita identificar el seno y el coseno en la gráfica.
 \fi
 
 \def\parte{recetas}
 \ifx\capitulo\parte
 \begin{enumerate}
-\item
+\item Declaramos un rango de valores para la $x$ que vaya de 0 a $10\pi$, con saltos lo suficientemente pequeños como para que las gráficas se vean con suficiente resolución.
+\item Dibujamos cada una de las grácias.
+\item Las líneas rectas son funciones que para cualquier $x$ devuelve el valor de su altura ($\frac{\sqrt{2}}{2}$ y $-\frac{\sqrt{2}}{2}$, según corresponda).
 \end{enumerate}
 \fi
 
 \def\parte{soluciones}
 \ifx\capitulo\parte
-%\lstinputlisting[style=matlab-style]{snippets/ej.m}
+\lstinputlisting[style=matlab-style]{snippets/ej13.m}
 \fi
 %%% Local Variables:
 %%% mode: latex

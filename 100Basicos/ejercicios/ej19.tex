@@ -1,19 +1,22 @@
 \subsection{Ejercicio 19}
 \def\parte{enunciados}
 \ifx\capitulo\parte
-
+Genera un vector de 100 números aleatorios en el rango $[5,10]$ y dibuja los valores obtenidos. Para ello recuerda la siguiente formula cambia la escala, generando para cada número $x$ en un rango $[a,b]$, su correspondiente número en el rango $[c,d]$:
+\[x \longrightarrow c + \frac{(d-c)(x - a)}{b-a}\]
 \fi
 
 \def\parte{recetas}
 \ifx\capitulo\parte
 \begin{enumerate}
-\item
+\item Obtenemos un vector de 100 números aleatorios en el rango $[0,1]$ con la función.
+\item Usamos sobre este vector la fórmula del enunciado donde ahora partirmos del rango $[0,1]$ y pasamos al rango $[5,10]$.
+\item Pintamos los valores.
 \end{enumerate}
 \fi
 
 \def\parte{soluciones}
 \ifx\capitulo\parte
-%\lstinputlisting[style=matlab-style]{snippets/ej.m}
+\lstinputlisting[style=matlab-style]{snippets/ej19.m}
 \fi
 %%% Local Variables:
 %%% mode: latex
